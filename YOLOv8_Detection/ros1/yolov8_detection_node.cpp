@@ -104,7 +104,7 @@ public:
             cv::ocl::Context context;
             if (context.create(cv::ocl::Device::TYPE_ALL)) {
                 std::vector<cv::ocl::PlatformInfo> platforms;
-                cv::ocl::getPlatfomsInfo(platforms);
+                cv::ocl::getPlatformsInfo(platforms);
                 
                 for (const auto& platform : platforms) {
                     ROS_INFO("Platform Name: %s", platform.name().c_str());
