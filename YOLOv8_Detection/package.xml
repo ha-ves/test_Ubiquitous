@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>yolov8_detection</name>
+  <version>1.0.0</version>
+  <description>ROS1 wrapper for YOLOv8 object detection using ONNX model</description>
+
+  <maintainer email="unknown@todo.todo">unknown</maintainer>
+  <license>LGPL</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  <depend>visualization_msgs</depend>
+
+  <export>
+  </export>
+</package>

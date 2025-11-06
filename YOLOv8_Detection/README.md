@@ -1,8 +1,15 @@
 ﻿# YOLOv8_Detection
 
+> **📢 ROS1 Integration Available!**  
+> This component now supports ROS1! See [ROS1_README.md](ROS1_README.md) for details on using YOLOv8_Detection as a ROS1 node.
+
 ## Overview
 
 Detect object using YOLOv8 ONNX model
+
+This component is available in two variants:
+- **OpenRTM-aist component** (original) - Use `CMakeLists_openrtm.txt`
+- **ROS1 node** (new) - Use `CMakeLists.txt` with catkin build system
 
 ## Description
 
