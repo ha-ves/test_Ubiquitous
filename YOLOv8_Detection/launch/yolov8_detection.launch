@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- YOLOv8 Detection Node -->
+  <node name="yolov8_detection" pkg="yolov8_detection" type="yolov8_detection_node" output="screen">
+    <!-- ONNX model file path -->
+    <param name="onnx_file" value="$(find yolov8_detection)/best_full.onnx" />
+    
+    <!-- Detection thresholds -->
+    <param name="confidence_threshold" value="0.75" />
+    <param name="iou_threshold" value="0.75" />
+    
+    <!-- Remap topics as needed -->
+    <remap from="image_raw" to="/camera/image_raw" />
+    <remap from="detected_objects" to="/yolov8/detected_objects" />
+    <remap from="detection_markers" to="/yolov8/detection_markers" />
+    <remap from="debug_image" to="/yolov8/debug_image" />
+  </node>
+</launch>
